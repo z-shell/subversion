@@ -1,42 +1,53 @@
-# `APACHE/SUBVERSION` ZINIT PACKAGE
+<h3>
 
-## Homepage link: [apache/subversion](https://github.com/apache/subversion)
+| **Package source:** |        Source Tarball        | Binary |        Git         | Node | Gem |
+| :-----------------: | :--------------------------: | :----: | :----------------: | :--: | :-: |
+|     **Status:**     | :heavy_check_mark: (default) |  :x:   | :heavy_check_mark: | :x:  | :x: |
 
-| **Package source:** |  Source Tarball  | Binary | Git | Node | Gem |
-|:-------------------:|:----------------:|:------:|:---:|:----:|:---:|
-|     **Status:**     | + <br> (default) |   -    |  +  |  –   |  –  |
+</h3>
 
-[Zinit](https://github.com/z-shell/zinit) can use the NPM package registry
-to automatically:
+- [Introduction](#introduction)
+- [Install](#install)
+	- [Available `pack''` invocations](#available-pack-invocations)
+	- [Default Profile](#default-profile)
+
+# Introduction
+
+> **[?]**
+> This repository not compatible with previous versions (zplugin, zinit).
+>
+> Please upgrade to [ZI](https://github.com/z-shell-zi)
+
+The [apache/subversion](https://github.com/apache/subversion) zsh package than can use the NPM package registry to automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
   - there can be multiple lists of ices,
-  - the ice lists are stored in *profiles*; there's at least one profile, *default*,
-  - the ices can be selectively overriden.
+  - the ice lists are stored in _profiles_; there's at least one profile, _default_,
+  - the ices can be selectively overridden.
 
-Example invocations that'll install
-[apache/subversion](https://github.com/apache/subversion) either from the release archive
-or from Git repository:
+# Install
+
+## Available `pack''` invocations
 
 ```zsh
 # Download and install the APR dependency of Subversion
-zinit pack for apr
+zi pack for apr
 # Download, build and install the latest Subversion source tarball
-zinit pack for subversion
+zi pack for subversion
 ```
 
 ## Default Profile
 
 Provides the Subversion revision control system by compiling and installing it
-to the `$ZPFX` directory (`~/.zinit/polaris` by default). It uses the
+to the `$ZPFX` directory (`~/.zi/polaris` by default). It uses the
 [z-shell/z-a-as-monitor](https://github.com/z-shell/z-a-as-monitor) annex to
 download the latest Subversion tarball.
 
-The Zinit command executed will be equivalent to:
+The ZI command executed will be equivalent to:
 
 ```zsh
-zinit as"null|monitor" dlink"https://.*/subversion-%VERSION%.tar.bz2" \
+zi as"null|monitor" dlink"https://.*/subversion-%VERSION%.tar.bz2" \
     atclone'zpextract --move --auto; print -P \\n%F{75}Building Subversion...\\n%f; ./configure \
         --prefix="$ZPFX" --with-apr='$ZPFX' >/dev/null && make >/dev/null && print -P \
         \\n%F{75}Installing Subversion to $ZPFX...\\n%f && make install >/dev/null && print -P \
@@ -45,5 +56,3 @@ zinit as"null|monitor" dlink"https://.*/subversion-%VERSION%.tar.bz2" \
     atpull'%atclone' for \
         https://subversion.apache.org/download.cgi
 ```
-
-<!-- vim:set ft=markdown tw=80 fo+=an1 autoindent: -->
