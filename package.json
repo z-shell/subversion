@@ -26,7 +26,7 @@
   "contributors": [],
   "dependencies": {},
   "deprecated": false,
-  "description": "Simple Python version management",
+  "description": "Subversion, a version control system",
   "devDependencies": {},
   "directories": {
     "test": "test"
@@ -48,7 +48,7 @@
       "requires": "monitor",
       "url": "https://subversion.apache.org/download.cgi"
     },
-    "zplugin-ices": {
+    "zi-ices": {
       "default": {
         "is-snippet": "",
         "lucid": "",
