@@ -8,8 +8,8 @@
 
 - [Introduction](#introduction)
 - [Install](#install)
-	- [Available `pack''` invocations](#available-pack-invocations)
-	- [Default Profile](#default-profile)
+  - [Available `pack''` invocations](#available-pack-invocations)
+  - [Default Profile](#default-profile)
 
 # Introduction
 
@@ -18,7 +18,7 @@
 >
 > Please upgrade to [ZI](https://github.com/z-shell-zi)
 
-The [apache/subversion](https://github.com/apache/subversion) zsh package than can use the NPM package registry to automatically:
+The [apache/subversion](https://github.com/apache/subversion) zsh package that can use the NPM package registry to automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
