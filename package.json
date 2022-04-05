@@ -1,23 +1,23 @@
 {
-  "_from": "svn@^1.14.1",
-  "_id": "zsh-svn@1.14.1",
+  "_from": "svn@^1.14.2",
+  "_id": "zsh-svn@1.14.2",
   "_inBundle": false,
   "_location": "/zsh-svn",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "svn@^1.14.1",
+    "raw": "svn@^1.14.2",
     "name": "svn",
     "escapedName": "svn",
-    "rawSpec": "^1.14.1",
+    "rawSpec": "^1.14.2",
     "saveSpec": null,
-    "fetchSpec": "^1.14.1"
+    "fetchSpec": "^1.14.2"
   },
   "_requiredBy": [],
-  "_resolved": "https://github.com/apache/subversion/archive/1.14.1.tar.gz",
+  "_resolved": "https://github.com/apache/subversion/archive/1.14.2.tar.gz",
   "_shasum": "d209f3e3602c00c16eefe6f2aea49eaeca17a1d8",
-  "_spec": "svn@^1.14.1",
+  "_spec": "svn@^1.14.2",
   "_where": "/root/github2/pkg-svn",
   "author": "Yuu Yamashita, Sam Stephenson, Mislav Marohnić, Josh Friend",
   "bugs": {
@@ -44,7 +44,7 @@
   "version": "1.2.17",
   "zsh-data": {
     "plugin-info": {
-      "version": "1.14.1",
+      "version": "1.14.2",
       "requires": "monitor",
       "url": "https://subversion.apache.org/download.cgi"
     },
