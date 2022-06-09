@@ -1,15 +1,27 @@
 <div align="center"><table><tr><td>
-<h1>
-<a href="https://github.com/z-shell/zi">
-<img align="center" src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="60px" height="60px" /></a>
-  ❮ ZI ❯ Package - Subversion </h1>
+<h1><a href="https://github.com/z-shell/zi">
+  <p><img align="center" src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="60px" height="60px" /></a>
+  ❮ ZI ❯ Package - Subversion </p>
+</h1>
 <h3 align="center">
-
-| **Package source:** |        Source Tarball        | Binary |        Git         | Node | Gem |
-| :-----------------: | :--------------------------: | :----: | :----------------: | :--: | :-: |
-|     **Status:**     | :heavy_check_mark: (default) |  :x:   | :heavy_check_mark: | :x:  | :x: |
-
-</h3>
+<table>
+    <tr>
+        <td><b>Package source:</b></td>
+        <td>Source Tarball</td>
+        <td>Binary</td>
+        <td>Git</td>
+        <td>Node</td>
+        <td>Gem</td>
+    </tr>
+    <tr>
+        <td><b>Status:</b></td>
+        <td>✔️ (default)</td>
+        <td>❌</td>
+        <td>✔️</td>
+        <td>❌</td>
+        <td>❌</td>
+    </tr>
+</table></h3>
 <p><img align="center" src="https://user-images.githubusercontent.com/59910950/172344415-306d8484-dc46-4fee-89db-9cfa9c149182.png" alt="zi subversion package" width="100%" height="auto" /></p>
 </td></tr></table></div>
 
@@ -47,7 +59,7 @@ zi as"null|monitor" dlink"https://.*/subversion-%VERSION%.tar.bz2" \
 
 > This repository compatible with [ZI](https://github.com/z-shell/zi)
 
-The [apache/subversion](https://github.com/apache/subversion) zsh package that can use the [zsh-string-lib](https://github.com/z-shell/zsh-string-lib) to automatically:
+The [apache/subversion](https://github.com/apache/subversion) zsh package that uses the [zsh-string-lib](https://github.com/z-shell/zsh-string-lib) to automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
