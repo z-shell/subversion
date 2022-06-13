@@ -1,11 +1,6 @@
 {
   "name": "zsh-svn",
-  "version": "1.2.17",
-  "contributors": [],
-  "dependencies": {},
-  "deprecated": false,
   "description": "Subversion, a version control system",
-  "devDependencies": {},
   "license": "MIT",
   "homepage": "https://github.com/apache/subversion",
   "keywords": [
@@ -18,8 +13,7 @@
   },
   "zsh-data": {
     "plugin-info": {
-      "version": "1.14.2",
-      "requires": "monitor",
+      "requires": "readurl",
       "url": "https://subversion.apache.org/download.cgi"
     },
     "zi-ices": {
@@ -29,8 +23,9 @@
         "id-as": "subversion",
         "as": "readurl|null",
         "dlink": "https://.*/subversion-%VERSION%.tar.bz2",
-        "atclone": "ziextract --move --auto; +zi-message 'Building Subversion...'; ./configure --prefix='$ZPFX' --with-apr='$ZPFX' >/dev/null && make >/dev/null && +zi-message 'Installing Subversion to $ZPFX...' && make install >/dev/null && +zi-message '{ok}Installation of Subversion succeeded{rst}' || +zi-message '{error}Installation of Subversion failed{rst}'",
+        "atclone": "ziextract --move --auto; +zi-message 'Building Subversion...'; ./configure --prefix='$ZPFX' --with-apr='$ZPFX' &>/dev/null && make >/dev/null && +zi-message 'Installing Subversion to $ZPFX...' && make install &>/dev/null && +zi-message '{ok}Installation of Subversion succeeded{rst}' || +zi-message '{error}Installation of Subversion failed{rst}'",
         "atpull": "%atclone",
+        "countdown": "",
         "nocompile": "!"
       }
     }
