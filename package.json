@@ -13,7 +13,7 @@
   },
   "zsh-data": {
     "plugin-info": {
-      "requires": "readurl",
+      "requires": "rdl",
       "url": "https://subversion.apache.org/download.cgi"
     },
     "zi-ices": {
