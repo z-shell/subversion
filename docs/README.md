@@ -1,7 +1,7 @@
 <div align="center"><table><tr><td>
 <h1><a href="https://github.com/z-shell/zi">
   <p><img align="center" src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="60px" height="60px" /></a>
-  ❮ ZI ❯ Package - Subversion </p>
+  ❮ Zi Package - Subversion ❯</p>
 </h1>
 <h3 align="center">
 <table>
@@ -42,7 +42,7 @@ zi pack for subversion
 Provides the Subversion revision control system by compiling and installing it to the `$ZPFX` directory (`~/.zi/polaris` by default).
 It uses the [z-shell/z-a-readurl](https://github.com/z-shell/z-a-readurl) annex to download the latest Subversion tarball.
 
-The ZI command executed will be equivalent to:
+The Zi command executed will be equivalent to:
 
 ```shell
 zi as"null|monitor" dlink"https://.*/subversion-%VERSION%.tar.bz2" \
@@ -57,7 +57,7 @@ zi as"null|monitor" dlink"https://.*/subversion-%VERSION%.tar.bz2" \
 
 ---
 
-> This repository compatible with [ZI](https://github.com/z-shell/zi)
+> This repository compatible with [Zi](https://github.com/z-shell/zi)
 
 The [apache/subversion](https://github.com/apache/subversion) zsh package that uses the [zsh-string-lib](https://github.com/z-shell/zsh-string-lib) to automatically:
 
