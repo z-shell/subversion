@@ -59,7 +59,7 @@ zi as"null|monitor" dlink"https://.*/subversion-%VERSION%.tar.bz2" \
 
 > This repository compatible with [Zi](https://github.com/z-shell/zi)
 
-The [apache/subversion](https://github.com/apache/subversion) zsh package that uses the [zsh-string-lib](https://github.com/z-shell/zsh-string-lib) to automatically:
+The [apache/subversion](https://github.com/apache/subversion) zsh package. Zi's package support reads its `package.json` to automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
